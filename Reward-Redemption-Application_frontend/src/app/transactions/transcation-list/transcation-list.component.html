@@ -1,0 +1,16 @@
+<h2>Transactions</h2>
+
+<input placeholder="Card ID" [(ngModel)]="cardId">
+<button (click)="generate()">Generate Transactions</button>
+<button (click)="load()">View</button>
+
+<table border="1">
+  <tr>
+    <th>Amount</th>
+    <th>Date</th>
+  </tr>
+  <tr *ngFor="let t of transactions">
+    <td>{{ t.amount }}</td>
+    <td>{{ t.date }}</td>
+  </tr>
+</table>

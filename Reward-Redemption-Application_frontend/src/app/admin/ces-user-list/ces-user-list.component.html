@@ -1,0 +1,21 @@
+<h2>CES User Management</h2>
+
+<input placeholder="Username" [(ngModel)]="username">
+<select [(ngModel)]="role">
+  <option value="CES">CES</option>
+  <option value="ADMIN_CES">ADMIN CES</option>
+</select>
+<button (click)="create()">Create</button>
+
+<table border="1">
+  <tr>
+    <th>Username</th>
+    <th>Role</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let u of users">
+    <td>{{ u.username }}</td>
+    <td>{{ u.role }}</td>
+    <td><button (click)="delete(u.id!)">Delete</button></td>
+  </tr>
+</table>

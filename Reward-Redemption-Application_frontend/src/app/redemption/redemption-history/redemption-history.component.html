@@ -1,0 +1,17 @@
+<h2>Redemption History</h2>
+
+<input placeholder="Customer ID" [(ngModel)]="customerId">
+<button (click)="load()">Load</button>
+
+<table border="1">
+  <tr>
+    <th>Item</th>
+    <th>Points</th>
+    <th>Date</th>
+  </tr>
+  <tr *ngFor="let r of history">
+    <td>{{ r.itemName }}</td>
+    <td>{{ r.pointsUsed }}</td>
+    <td>{{ r.redeemedOn }}</td>
+  </tr>
+</table>

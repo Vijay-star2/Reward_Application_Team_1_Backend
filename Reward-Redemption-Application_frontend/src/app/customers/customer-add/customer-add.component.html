@@ -1,0 +1,11 @@
+<h2>Add Customer</h2>
+
+<form (ngSubmit)="addCustomer()">
+    <label>Name:</label><br>
+    <input [(ngModel)]="name" name="name" required /><br><br>
+
+    <label>Association Date</label><br>
+    <input type="date" [(ngModel)]="associationDate" name="date" required /><br><br>
+    <button type="submit">Add Customer</button>
+
+</form>

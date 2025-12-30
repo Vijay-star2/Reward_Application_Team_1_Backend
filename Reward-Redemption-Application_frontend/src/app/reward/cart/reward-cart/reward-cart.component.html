@@ -1,0 +1,10 @@
+<app-reward-summary
+  [availablePoints]="availablePoints"
+  [cart]="cart">
+</app-reward-summary>
+
+<button
+  [disabled]="totalPoints > availablePoints"
+  (click)="redeemAll()">
+  Redeem All
+</button>

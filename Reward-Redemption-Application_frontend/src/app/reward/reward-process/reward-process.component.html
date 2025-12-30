@@ -1,0 +1,9 @@
+<h2>Reward Processing</h2>
+
+<input placeholder="Customer ID" [(ngModel)]="customerId">
+<button (click)="processRewards()">Process Rewards</button>
+
+<div *ngIf="result">
+  <p>Customer Type: {{ result.customerType }}</p>
+  <p>Total Reward Points: {{ result.totalPoints }}</p>
+</div>

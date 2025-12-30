@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    Reward Redemption – CES Portal
+  </mat-toolbar>
+  
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+      <a routerLink="/customers">Customers</a><br>
+      <a routerLink="/cards">Cards</a><br>
+      <a routerLink="/rewards">Rewards</a><br>
+      <a routerLink="/redemptions">History</a>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

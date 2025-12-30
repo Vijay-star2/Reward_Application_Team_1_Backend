@@ -1,0 +1,12 @@
+<h3>Reward Summary</h3>
+
+<p>Total Items: {{ cart.length }}</p>
+<p>Total Points: {{ totalPoints }}</p>
+<p>Available Points: {{ availablePoints }}</p>
+
+<p *ngIf="eligible" style="color: green">
+  Eligible for redemption
+</p>
+<p *ngIf="!eligible" style="color: red">
+  Not enough points
+</p>

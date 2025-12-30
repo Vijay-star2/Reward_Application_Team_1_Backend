@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { RewardSummaryComponent } from './reward-summary.component';
+
+describe('RewardSummaryComponent', () => {
+  let component: RewardSummaryComponent;
+  let fixture: ComponentFixture<RewardSummaryComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [RewardSummaryComponent]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(RewardSummaryComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
